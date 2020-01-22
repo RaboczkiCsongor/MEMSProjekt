@@ -35,10 +35,29 @@ Felhasznált elemek:
 ![motorvezerlomodul](https://user-images.githubusercontent.com/54138095/72931934-0b5c3080-3d5f-11ea-92d8-66d677714a82.png)
 
 ## Hardver specifikációk:
+#### Raspberry Pi 3 Model B+: 
+- Broadcom 1.4GHz 64-bit quad-core processzorral rendelkezik
+- Broadcom Videocore-IV grafikai egység
+- 1GB LPDDR2 SDRAM
+- 40 GPIO pin output és input lehetőség
 
+#### TT DC motor:
+- 3V-12V között üzemel
+- 3 Volton 70mA
+#### Motor vezérlő modul:
+- Fő kontroller chip: L298N
+- Logikai feszültség: 5V
+- Maximális teljesítmény 25W
+
+#### Vonal követő szenzor:
+- Digitális output jel
+- 5V szükséges a működtetéséhez
+- 1-3 cm érzékelési távolság
+- Led, amely segíti a fejlesztést(Fekete felület: 1 jelet ad, fehér felületen 0 jelet ad)
+- Potenciométer az érzékenység állításához
 
 ## Szoftver specifikációk:
-
+A robot szoftverét Python nyelven írtam meg, 
 
 ## Rendszerkövetelmények:
 
