@@ -31,7 +31,8 @@ Felhasznált elemek:
 
 ![KötésiRajz (1)](https://user-images.githubusercontent.com/54138095/72931790-cd5f0c80-3d5e-11ea-9a2a-c68847e85022.PNG)
 
-
+#### Motor vezérlő áramköri rajza:
+![motorvezerlomodul](https://user-images.githubusercontent.com/54138095/72931934-0b5c3080-3d5f-11ea-92d8-66d677714a82.png)
 
 ## Hardver specifikációk:
 
