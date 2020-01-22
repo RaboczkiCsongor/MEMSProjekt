@@ -27,6 +27,9 @@ Felhasznált elemek:
 - Kettő optikai érzékelő
 - Kettő bútorkerék (az első tengely szabadon futása miatt)
 
+#### Kötési rajz:
+
+![KötésiRajz (1)](https://user-images.githubusercontent.com/54138095/72931790-cd5f0c80-3d5e-11ea-9a2a-c68847e85022.PNG)
 
 
 
