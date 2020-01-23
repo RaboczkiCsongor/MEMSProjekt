@@ -61,8 +61,64 @@ A robot szoftverét Python nyelven írtam meg. Python IDLE környezetbe futtatok
 
 
 ## Fejlesztett kódok részletezése:
+Elöször is azonosítom a bemeneteket, hogy melyik GPIO pin-re kötöttem az adott motort és infra érzékelőt.
 ```python
+import RPi.GPIO as IO
+import time
+IO.setwarnings(False)
+IO.setmode(IO.BCM)
 
+IO.setup(20,IO.IN) #GPIO 20 -> Bal infra erzekelo
+IO.setup(26,IO.IN) #GPIO 26 -> Jobb infra erzeklo
+
+IO.setup(8,IO.OUT) #GPIO 8 -> Jobb motor terminal A
+IO.setup(7,IO.OUT) #GPIO 7 -> Jobb motor terminal B
+
+IO.setup(9,IO.OUT) #GPIO 9 -> Bal motor terminal A
+IO.setup(10,IO.OUT) #GPIO 10 -> Bal motor terminal B
+Végtelen ciklusba működtetem a robotot.
+```python
+while 1:
 ```
+Ha mindkettő érzékelő fekete felületet lát akkor mindkettő motor áll. Pálya végeken elhelyezet keresztbe lévő fekete csík jelzi a pálya végét.
+```python
+if(IO.input(20)==True and IO.input(26)==True): #mindketto motor all    
+        IO.output(8,True) #1A+
+        IO.output(7,True) #1B-
+
+        IO.output(9,True) #2A+
+        IO.output(10,True) #2B-
+```
+Jobbra fordulás: Forduláshoz mindkettő motort működtetem. Ellentétes irányba forgatom őket. Ezzel megkönnyítve a fordulást. Ellenkező esetben szűk fordulókkal problémái adódhatnak.
+
+```python
+elif(IO.input(2)==False and IO.input(3)==True): #jobbra fordul 
+        IO.output(4,False) #1A+
+        IO.output(14,True) #1B-
+
+        IO.output(17,True) #2A+
+        IO.output(18,False) #2B-
+```
+
+Balra fordulás, ugyanazon az elven mint a jobbra iránynál csak most ellentétesen.
+
+```python
+elif(IO.input(2)==True and IO.input(3)==False): #Balra fordul
+        IO.output(4,True) #1A+
+        IO.output(14,False) #1B-
+
+        IO.output(17,False) #2A+
+        IO.output(18,True) #2B-
+```
+Előre irány megvalósítása:
+```python
+else:  #megy elore
+        IO.output(4,True) #1A+
+        IO.output(14,False) #1B-
+
+        IO.output(17,True) #2A+
+        IO.output(18,False) #2B-
+ ```
+ 
 
 ## Képek a kész projektről:
