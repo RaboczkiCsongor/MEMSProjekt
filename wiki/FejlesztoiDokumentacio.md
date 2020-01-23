@@ -1,7 +1,6 @@
 # Fejlesztői dokumentáció
 ## Vonal követő robot
-#### Raboczki Csongor (Neptun kód: HFJQX4)
-
+#### Raboczki Csongor
 
 ## Tervezési fázis: 
 Tervezési fázis első lépése az volt hogy, kiválasszam a small board computert ami az egészet irányitani fogja. 
