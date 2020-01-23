@@ -122,3 +122,9 @@ else:  #megy elore
  
 
 ## Képek a kész projektről:
+
+![robot2](https://user-images.githubusercontent.com/54138095/72946040-022e8c00-3d7e-11ea-8002-48a019c076d3.jpg)
+
+
+
+![Robot1](https://user-images.githubusercontent.com/54138095/72946032-fe026e80-3d7d-11ea-8155-9fd021586b4a.jpg)
