@@ -59,6 +59,20 @@ Felhasznált elemek:
 ## Szoftver specifikációk:
 A robot szoftverét Python nyelven írtam meg. Python IDLE környezetbe futtatok egy while ciklust ami folyton fut és control+C billenytyű kombinációval szakítható meg.
 
+## Hardver specifikációk:
+Fontos a működéshez a helyes összekötése a GPIO kimenetek és bemeneteknek a modulokkal.
+#### Optikai erzekelő:
+Bal érzékelő DO kimenet -> GPIO 20\
+Jobb érzékelő DO kimenet -> GPIO 26\
+Érzékelők VCC -> Pi 5V pin\
+Érzékelők GND -> Pi GND pin\
+#### Motor vezérlő modul:
+IN1 -> GPIO 7\
+IN2 -> GPIO 8\
+IN3 -> GPIO 9\
+IN4 -> GPIO 10\
+GND -> Pi GND pin\
+12V bemenet -> Pi 5V pin (Ideális esetben nem RPI-röl szolgáltatnánk a tápot de működik)\
 
 ## Fejlesztett kódok részletezése:
 Elöször is azonosítom a bemeneteket, hogy melyik GPIO pin-re kötöttem az adott motort és infra érzékelőt.
