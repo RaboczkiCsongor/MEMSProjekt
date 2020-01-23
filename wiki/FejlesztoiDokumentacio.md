@@ -53,16 +53,16 @@ Felhasznált elemek:
 - Digitális output jel
 - 5V szükséges a működtetéséhez
 - 1-3 cm érzékelési távolság
-- Led, amely segíti a fejlesztést(Fekete felület: 1 jelet ad, fehér felületen 0 jelet ad)
+- Led, amely segíti a fejlesztést(Fekete felület: 0 jelet ad, fehér felületen 1 jelet ad)
 - Potenciométer az érzékenység állításához
 
 ## Szoftver specifikációk:
-A robot szoftverét Python nyelven írtam meg, 
-
-## Rendszerkövetelmények:
+A robot szoftverét Python nyelven írtam meg. Python IDLE környezetbe futtatok egy while ciklust ami folyton fut és control+C billenytyű kombinációval szakítható meg.
 
 
 ## Fejlesztett kódok részletezése:
+```python
 
+```
 
 ## Képek a kész projektről:
